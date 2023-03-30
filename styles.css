@@ -1,9 +1,13 @@
 * {
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
+body {
+    background-color:#BA4949;
+}
 .container {
-    width:100%;
+    max-width:1660px;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -12,7 +16,7 @@
 }
 
 .wrapper {
-    width: 450px;
+    max-width: 450px;
     height: 300px;
     background-color: #C15C5C;
     padding:15px;
@@ -106,12 +110,99 @@ a {
 .text_pomodoro {
     background-color: #A44E4E;
     padding:5px;
+
 }
+
 
 .short_break {
     padding:5px;
 }
 
+
+
 .long_break {
     padding:5px;
+}
+
+
+
+.header {
+    padding:10px;
+    max-width:1660px;
+    height: 6vh;
+    background-color: #BA4949;
+    display:flex;
+    justify-content: center;
+    /* gap:250px; */
+    color:white;
+    align-items:center;
+}
+
+/* .inline-header {
+    display:flex;
+    justify-content: center;
+    gap:50px;
+} */
+
+
+/* .buttons {
+    display:flex;
+    justify-content: center;
+    gap:15px;
+} */
+
+/* .buttons button {
+    padding-top:1px;
+    padding-bottom:1px;
+    padding-left:1px;
+    padding-right:1px;
+} */
+
+.buttons button {
+    background-color: #C66A6A;
+    border-color:#C66A6A;
+    border-style:solid;
+    color:#F8EDED;
+    padding:5px 10px;
+    font-size:14px;
+}
+
+
+.inline-header {
+    display:flex;
+    gap:250px;
+    border-bottom: 1.5px solid #A74242;
+    padding-bottom:10px;
+}
+
+
+.btn_tasks {
+    margin-left:5px;
+    cursor: pointer;
+}
+
+.btn_tasks:hover {
+    color:white;
+    transition: .2s linear;
+}
+
+
+.btn_settings {
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.btn_settings:hover {
+    color:white;
+    transition: .2s linear;
+}
+
+.btn_login {
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    color:white;
+    transition: .2s linear;
 }
