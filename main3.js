@@ -1,5 +1,5 @@
 let button_start = document.querySelector(".button_start");
-
+let btn_start = document.querySelector('.btn_start');
 let minutesCounter = document.querySelector(".minutes");
 let secoundsCounter = document.querySelector(".secounds");
 
@@ -18,6 +18,8 @@ let startStop = false;
 function buttonStartTimer() {
   if (!startStop) {
     startStop = true;
+
+    btn_start.innerText = `pause`;
 
     audio3.play();
 
