@@ -8,13 +8,13 @@
     display:flex;
     justify-content: center;
     padding-top:50px;
-    background-color: #BA4949;
+    background-color: #38858A;
 }
 
 .wrapper {
     width: 450px;
     height: 300px;
-    background-color: #C15C5C;
+    background-color: #4C9196;
     padding:15px;
     display:flex;
     flex-direction: column;
@@ -68,13 +68,12 @@ a {
     box-shadow: rgb(235, 235, 235) 0px 6px 0px;
     font-size: 22px;
     height: 55px;
-    color: rgb(186, 73, 73);
+    color: #38858A;
     font-weight: bold;
     width: 200px;
     background-color: white;
     transition: color 0.5s ease-in-out 0s;
 }
-
 
 .button_start button:hover {
     opacity: 0.9;
@@ -105,12 +104,13 @@ a {
 }
 
 .text_pomodoro {
-    background-color: #A44E4E;
+    
     padding:5px;
 }
 
 .short_break {
     padding:5px;
+    background-color: #417B80;
 }
 
 .long_break {

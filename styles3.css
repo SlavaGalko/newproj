@@ -3,35 +3,35 @@
 }
 
 .container {
-    width:100%;
+    width: 100%;
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
-    padding-top:50px;
-    background-color: #BA4949;
+    padding-top: 50px;
+    background-color: #397097;
 }
 
 .wrapper {
     width: 450px;
     height: 300px;
-    background-color: #C15C5C;
-    padding:15px;
-    display:flex;
+    background-color: #4D7FA2;
+    padding: 15px;
+    display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
 
 .inline-buttons {
-    display:flex;
-    gap:25px;
+    display: flex;
+    gap: 25px;
     justify-content: center;
 }
 
 .inline-buttons h2 {
-    font-size:17px;
-    color:white;
+    font-size: 17px;
+    color: white;
 }
 
 a {
@@ -43,19 +43,19 @@ a {
     width: 450px;
     height: 200px;
     justify-content: center;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 .midle-row h2 {
-    color:white;
-    font-size:100px;
+    color: white;
+    font-size: 100px;
 }
 
 .button_start {
-    width:450px;
+    width: 450px;
     height: 100px;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -68,13 +68,12 @@ a {
     box-shadow: rgb(235, 235, 235) 0px 6px 0px;
     font-size: 22px;
     height: 55px;
-    color: rgb(186, 73, 73);
+    color: #397097;
     font-weight: bold;
     width: 200px;
     background-color: white;
     transition: color 0.5s ease-in-out 0s;
 }
-
 
 .button_start button:hover {
     opacity: 0.9;
@@ -100,19 +99,20 @@ a {
 
 
 .secounds h2 {
-    font-size:100px;
-    color:white;
+    font-size: 100px;
+    color: white;
 }
 
 .text_pomodoro {
-    background-color: #A44E4E;
-    padding:5px;
+
+    padding: 5px;
 }
 
 .short_break {
-    padding:5px;
+    padding: 5px;
 }
 
 .long_break {
-    padding:5px;
+    padding: 5px;
+    background-color: #426C8A;
 }
