@@ -11,7 +11,7 @@ let timerId;
 let counter = 0;
 
 let audio = new Audio("./sound/sound.mp3");
-let audio3 = new Audio("./sound/sound3.mp3");
+let audio3 = new Audio("./sound/sound5.mp3");
 
 let startStop = false;
 
@@ -23,8 +23,11 @@ function buttonStartTimer() {
 
     audio3.play();
 
+
+    
     timerId = setInterval(function () {
       secounds--;
+      document.title = `${minutes}:${secounds} - Time to focus!`;
 
       minutesCounter.innerText = minutes;
       secoundsCounter.innerText = secounds;
