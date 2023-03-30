@@ -45,6 +45,7 @@ function buttonStartTimer() {
     audio3.play();
     clearInterval(timerId);
     startStop = false;
+    btn_start.innerText = `START`;
   }
 }
 
