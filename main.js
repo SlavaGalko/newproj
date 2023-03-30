@@ -10,15 +10,15 @@ let secounds = 60;
 let timerId;
 let counter = 0;
 
-let audio = new Audio('./sound/sound.mp3');
-let audio3 = new Audio('./sound/sound3.mp3');
+let audio = new Audio("./sound/sound.mp3");
+let audio3 = new Audio("./sound/sound3.mp3");
 
 let startStop = false;
 
 function buttonStartTimer() {
   if (!startStop) {
     startStop = true;
-    
+
     audio3.play();
 
     timerId = setInterval(function () {
@@ -26,18 +26,17 @@ function buttonStartTimer() {
 
       minutesCounter.innerText = minutes;
       secoundsCounter.innerText = secounds;
-      if (secounds == 0 && minutes !=0) {
+      if (secounds == 0 && minutes != 0) {
         secounds = 60;
         minutes--;
-      }
-      else if (minutes == 0 && secounds == 0) {
+      } else if (minutes == 0 && secounds == 0) {
         audio.play();
         clearInterval(timerId);
         startStop = false;
         minutes = 59;
         secounds = 60;
         minutesCounter.innerText = 60;
-        secoundsCounter.innerText = '00';
+        secoundsCounter.innerText = "00";
       }
     }, 1000);
   } else {
@@ -46,4 +45,3 @@ function buttonStartTimer() {
     startStop = false;
   }
 }
-
