@@ -133,30 +133,10 @@ a {
     background-color: #BA4949;
     display:flex;
     justify-content: center;
-    /* gap:250px; */
     color:white;
     align-items:center;
 }
 
-/* .inline-header {
-    display:flex;
-    justify-content: center;
-    gap:50px;
-} */
-
-
-/* .buttons {
-    display:flex;
-    justify-content: center;
-    gap:15px;
-} */
-
-/* .buttons button {
-    padding-top:1px;
-    padding-bottom:1px;
-    padding-left:1px;
-    padding-right:1px;
-} */
 
 .buttons button {
     background-color: #C66A6A;

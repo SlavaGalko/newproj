@@ -1,9 +1,13 @@
 * {
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
+body {
+    background-color:#38858A;
+}
 .container {
-    width:100%;
+    max-width:1660px;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -12,7 +16,7 @@
 }
 
 .wrapper {
-    width: 450px;
+    max-width: 450px;
     height: 300px;
     background-color: #4C9196;
     padding:15px;
@@ -75,6 +79,7 @@ a {
     transition: color 0.5s ease-in-out 0s;
 }
 
+
 .button_start button:hover {
     opacity: 0.9;
 }
@@ -85,7 +90,6 @@ a {
     margin: 20px 0px 0px;
     padding: 0px 12px;
     border-radius: 4px;
-   
     font-size: 22px;
     height: 55px;
     color: rgb(186, 73, 73);
@@ -104,15 +108,81 @@ a {
 }
 
 .text_pomodoro {
-    
     padding:5px;
+
 }
+
 
 .short_break {
     padding:5px;
-    background-color: #417B80;
+    background-color: #417B80
 }
+
+
 
 .long_break {
     padding:5px;
+}
+
+
+
+.header {
+    padding:10px;
+    max-width:1660px;
+    height: 6vh;
+    background-color: #38858A;
+    display:flex;
+    justify-content: center;
+    color:white;
+    align-items:center;
+}
+
+
+.buttons button {
+    background-color: #5C9B9F;
+    border-color:#5C9B9F;
+    border-style:solid;
+    color:#EBF3F4;
+    padding:5px 10px;
+    font-size:14px;
+}
+
+
+.inline-header {
+    display:flex;
+    gap:250px;
+    border-bottom: 1.5px solid #32777C;
+    padding-bottom:10px;
+}
+
+
+.btn_tasks {
+    margin-left:5px;
+    cursor: pointer;
+}
+
+.btn_tasks:hover {
+    color:white;
+    transition: .2s linear;
+}
+
+
+.btn_settings {
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.btn_settings:hover {
+    color:white;
+    transition: .2s linear;
+}
+
+.btn_login {
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    color:white;
+    transition: .2s linear;
 }
