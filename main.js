@@ -72,6 +72,10 @@ function buttonStartTimer() {
         secounds = 60;
         minutesCounter.innerText = 60;
         secoundsCounter.innerText = "00";
+        btn_start.innerText = `START`;
+        btn_skip.classList.add("hide");
+        document.title = `Pomodoro Focus`;
+
       }
     }, 1000);
   } else {
