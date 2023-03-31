@@ -186,3 +186,61 @@ a {
     color:white;
     transition: .2s linear;
 }
+
+
+/* new */
+.hide {
+    display:none;
+}
+
+.button_skip {
+    margin-top:15px;
+    width:450px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.btn_skip {
+    margin-top:5px;
+    width:30px;
+    height: 30px;
+    background-color: #FFF;
+    border-color:#fff;
+    border-style:solid;
+    
+}
+
+.btn_skip:hover {
+    opacity: 0.7;
+    transition: all .1s linear;
+}
+
+.btn_skip:active {
+    color:#BA4949;
+}
+  
+/* new */
+
+
+.icls {
+    margin-right:0.3px;
+}
+
+.icon {
+    display:flex;
+    align-items:center;
+}
+
+
+.icls4 {
+    margin-left:5px;
+}
+
+
+
+a {
+    color:white;
+    text-decoration: none;
+}

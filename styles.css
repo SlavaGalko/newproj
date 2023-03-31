@@ -223,7 +223,6 @@ a {
     transition: .2s linear;
 }
 
-/* new */
 .hide {
     display:none;
 }
@@ -234,6 +233,7 @@ a {
     height: 50px;
     display:flex;
     justify-content: center;
+    
 }
 
 
@@ -244,7 +244,6 @@ a {
     background-color: #FFF;
     border-color:#fff;
     border-style:solid;
-    
 }
 
 .btn_skip:hover {
@@ -256,4 +255,23 @@ a {
     color:#BA4949;
 }
   
-/* new */
+
+.icls {
+    margin-right:0.3px;
+}
+
+.icon {
+    display:flex;
+    align-items:center;
+}
+
+
+.icls4 {
+    margin-left:5px;
+}
+
+
+a {
+    color:white;
+    text-decoration: none;
+}
