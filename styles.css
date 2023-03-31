@@ -1,10 +1,10 @@
 * {
     margin: 0;
-    /* overflow-x: hidden; */
 }
 
 body {
     background-color:#BA4949;
+    overflow-x: hidden;
 }
 .container {
     max-width:1660px;
@@ -62,8 +62,24 @@ a {
     display:flex;
     justify-content: center;
 }
-
+/* 
 .button_start button {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-size: 22px;
+    height: 55px;
+    color: rgb(186, 73, 73);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+} */
+
+.btn_start {
     cursor: pointer;
     border: none;
     margin: 20px 0px 0px;
@@ -79,12 +95,11 @@ a {
     transition: color 0.5s ease-in-out 0s;
 }
 
-
-.button_start button:hover {
+.btn_start:hover {
     opacity: 0.9;
 }
 
-.button_start button:active {
+.btn_start:active {
     cursor: pointer;
     border: none;
     margin: 20px 0px 0px;
@@ -100,6 +115,27 @@ a {
     box-shadow: none;
     transition: color 0.5s ease-in-out 0s;
 }
+
+/* .button_start button:hover {
+    opacity: 0.9;
+} */
+
+/* .button_start button:active {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 22px;
+    height: 55px;
+    color: rgb(186, 73, 73);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transform: translateY(6px);
+    box-shadow: none;
+    transition: color 0.5s ease-in-out 0s;
+} */
 
 
 .secounds h2 {
@@ -186,3 +222,38 @@ a {
     color:white;
     transition: .2s linear;
 }
+
+/* new */
+.hide {
+    display:none;
+}
+
+.button_skip {
+    margin-top:15px;
+    width:450px;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+
+.btn_skip {
+    margin-top:5px;
+    width:30px;
+    height: 30px;
+    background-color: #FFF;
+    border-color:#fff;
+    border-style:solid;
+    
+}
+
+.btn_skip:hover {
+    opacity: 0.7;
+    transition: all .1s linear;
+}
+
+.btn_skip:active {
+    color:#BA4949;
+}
+  
+/* new */
