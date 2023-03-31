@@ -4,7 +4,7 @@ let minutesCounter = document.querySelector(".minutes");
 let secoundsCounter = document.querySelector(".secounds");
 
 // new
-let btn_skip = document.querySelector('.btn_skip');
+let btn_skip = document.querySelector(".btn_skip");
 // new
 
 button_start.addEventListener("click", buttonStartTimer);
@@ -25,31 +25,41 @@ function buttonStartTimer() {
     btn_start.innerText = `pause`;
 
     //new
-    btn_skip.classList.remove('hide');
+    btn_skip.classList.remove("hide");
 
-    btn_skip.addEventListener('click',function(){
+    btn_skip.addEventListener("click", function () {
       startStop = false;
       minutes = 59;
-      secounds = 60
+      secounds = 60;
       clearInterval(timerId);
-      minutesCounter.innerText = '60';
-      secoundsCounter.innerText = '00';
+      minutesCounter.innerText = "60";
+      secoundsCounter.innerText = "00";
 
-      btn_skip.classList.add('hide');
+      btn_skip.classList.add("hide");
       btn_start.innerText = `START`;
       document.title = `Pomodoro Focus`;
-
-    })
+    });
     //new
 
     audio3.play();
 
     timerId = setInterval(function () {
       secounds--;
-      document.title = `${minutes}:${secounds} - Time to focus!`;
+      // document.title = `${minutes}:${secounds} - Time to focus!`;
 
-      minutesCounter.innerText = minutes;
-      secoundsCounter.innerText = secounds;
+      // test
+      if (secounds < 10) {
+        document.title = `${minutes}:0${secounds} - Time to focus!`;
+        secoundsCounter.innerText = `0${secounds}`;
+      } else {
+        minutesCounter.innerText = minutes;
+        secoundsCounter.innerText = secounds;
+        document.title = `${minutes}:${secounds} - Time to focus!`;
+      }
+      // test
+
+      // minutesCounter.innerText = minutes;
+      // secoundsCounter.innerText = secounds;
 
       if (secounds == 0 && minutes != 0) {
         secounds = 60;
@@ -71,7 +81,7 @@ function buttonStartTimer() {
     btn_start.innerText = `START`;
 
     //new
-    btn_skip.classList.add('hide');
+    btn_skip.classList.add("hide");
     //new
   }
 }

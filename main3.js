@@ -50,10 +50,19 @@ function buttonStartTimer() {
     
     timerId = setInterval(function () {
       secounds--;
-      document.title = `${minutes}:${secounds} - Time to focus!`;
+      // document.title = `${minutes}:${secounds} - Time to focus!`;
 
-      minutesCounter.innerText = minutes;
-      secoundsCounter.innerText = secounds;
+      if (secounds < 10) {
+        document.title = `${minutes}:0${secounds} - Time to focus!`;
+        secoundsCounter.innerText = `0${secounds}`;
+      } else {
+        minutesCounter.innerText = minutes;
+        secoundsCounter.innerText = secounds;
+        document.title = `${minutes}:${secounds} - Time to focus!`;
+      }
+
+      // minutesCounter.innerText = minutes;
+      // secoundsCounter.innerText = secounds;
       if (secounds == 0 && minutes != 0) {
         secounds = 60;
         minutes--;
