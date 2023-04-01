@@ -3,8 +3,29 @@ let btn_start = document.querySelector(".btn_start");
 let minutesCounter = document.querySelector(".minutes");
 let secoundsCounter = document.querySelector(".secounds");
 
-// new
 let btn_skip = document.querySelector(".btn_skip");
+
+
+// new
+
+let modal = document.querySelector('#myModal');
+let btn = document.querySelector('#myBtn');
+let span = document.querySelector('.close');
+
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 // new
 
 btn_start.addEventListener("click", buttonStartTimer);

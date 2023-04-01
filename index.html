@@ -27,12 +27,12 @@
                     Tasks
 
                 </button>
-
-                <button class="btn_settings">
+<!-- new -->
+                <button class="btn_settings" id="myBtn">
                     <i class="fa-solid fa-gear icls"></i>
                     Settings
                 </button>
-
+<!-- new -->
                 <button class="btn_login">
                     <i class="fa-solid fa-right-to-bracket icls"></i>
                     Login
@@ -44,6 +44,58 @@
     </div>
 
     <div class="container">
+
+<!-- <i class="fa-sharp fa-solid fa-gear"></i> -->
+
+
+        <!-- new -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <div class="container-modal">
+                    <div class="wrapper-modal">
+                        <div class="wrapper-wrap">
+                            <div class="row1 row">
+                                <h2> <i class="fas fa-gear fa-spin fa-spin-reverse" id="n1op"></i>
+                                    Settings</h2>
+                            </div>
+                            <div class="row2 row">
+                                
+                                <h3><i class="far fa-clock mwer"></i>Time (minutes)</h3>
+
+                                <div class="container-row2">
+                                    <div class="column1 column-row2">
+                                        <label for="n1" id="pomodoroLabel">Pomodoro</label>
+                                        <input type="number" class="row2_input" id="n1" value="60">
+                                    </div>
+                                    <div class="column2 column-row2">
+                                        <label for="n2">Short Break</label>
+                                        <input type="number" class="row2_input2" id="n2" value="15">
+                                    </div>
+                                    <div class="column3 column-row2">
+                                        <label for="n3">Long Break</label>
+                                        <input type="number" class="row2_input3" id="n3" value="30">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="row3 row"></div>
+                            <div class="row4 row"></div>
+                            <div class="row5 row"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- new -->
+
         <div class="wrapper">
             <div class="inline-buttons">
                 <a href="index.html" class="text_pomodoro">
