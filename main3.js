@@ -7,7 +7,7 @@ let secoundsCounter = document.querySelector(".secounds");
 let btn_skip = document.querySelector('.btn_skip');
 //new
 
-button_start.addEventListener("click", buttonStartTimer);
+btn_start.addEventListener("click", buttonStartTimer);
 
 let minutes = 29;
 let secounds = 60;

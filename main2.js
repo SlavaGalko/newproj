@@ -7,7 +7,7 @@ let secoundsCounter = document.querySelector(".secounds");
 let btn_skip = document.querySelector('.btn_skip');
 //new
 
-button_start.addEventListener("click", buttonStartTimer);
+btn_start.addEventListener("click", buttonStartTimer);
 
 let minutes = 9;
 let secounds = 60;
@@ -86,7 +86,7 @@ function buttonStartTimer() {
     audio3.play();
     clearInterval(timerId);
     startStop = false;
-
+    btn_start.innerText = `START`;
     //new
     btn_skip.classList.add('hide');
     //new
